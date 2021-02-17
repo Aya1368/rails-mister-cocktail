@@ -1,0 +1,35 @@
+.card{
+  width: 255px;
+  height:325px;
+  border-radius:30px;
+  text-align: center;
+  color:white;
+  background-color: #d3e0ea;
+  margin:10px;
+  padding:0;
+  }
+
+.row{
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.wrapper{
+  display: flex;
+  padding:50px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+
+}
+
+.text-card{
+  background-color:black;
+  color:white;
+  padding:30px;
+  text-align: center;
+  margin: 200px;
+  width:400px;
+}

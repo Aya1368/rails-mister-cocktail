@@ -1,3 +1,37 @@
 // Place all the styles related to the dose controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.create-dose{
+  background-image: url('https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1266&q=80');
+  height: 900px;
+  background-size: cover;
+}
+.cocktail{
+  background-image: url('https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1266&q=80');
+  height: 900px;
+  background-size: cover;
+ text-align: center;
+
+
+}
+.cocktail-content{
+  background-color:white;
+  text-align: center;
+  margin: 0;
+  border: 2px solid #007965;
+  border-radius: 5%;
+}
+
+.container{
+  justify-content:center;
+  padding-top: 50px;
+  width: 500px;
+
+}
+
+.table{
+  margin:0;
+}
+.btn{
+  margin-top:30px;
+}

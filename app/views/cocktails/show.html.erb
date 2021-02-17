@@ -1,27 +1,26 @@
 
-
+<div class="cocktail">
 <div class="container">
-
+ <div class="cocktail-content ">
   <h1><%= @cocktail.name %></h1>
-  <%= link_to "Back to all cocktails", root_path %>
+  <%= cl_image_tag @cocktail.photo.key %>
 
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
+  <div class="table">
       <h3>Recipe</h3>
       <table class="table table-bordered">
         <tbody>
           <thead>
             <th>Ingredient</th>
             <th>Description</th>
-            <th>Action</th>
+            <!-- <th>Action</th> -->
           </thead>
           <% @cocktail.doses.each do |dose| %>
             <tr>
               <td><%= dose.ingredient.name %></td>
               <td><%= dose.description %></td>
-              <td>
+              <!-- <td>
                 <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="fa fa-trash destroy_dose"></i>
+                  <i class="fa fa-trash destroy_dose"></i> -->
                 <% end %>
               </td>
             </tr>
@@ -29,8 +28,14 @@
         </tbody>
       </table>
     </div>
-  </div>
 
+<%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+
+</div>
 <%= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="fa fa-trash destroy_dose"></i>
+                  <i class="btn btn btn-dark btn-lg">Delete cocktail</i>
                 <% end %>
+
+</div>
+</div>
+
