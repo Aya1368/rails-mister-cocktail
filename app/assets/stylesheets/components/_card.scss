@@ -30,6 +30,12 @@
   color:white;
   padding:30px;
   text-align: center;
-  margin: 200px;
+  margin: auto;
   width:400px;
+  margin-top:50px;
+}
+@media screen and(max-width: 767px){
+  .wrapper{
+    display:inline-block;
+  }
 }
