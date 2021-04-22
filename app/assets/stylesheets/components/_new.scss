@@ -1,9 +1,9 @@
 .form{
   border-style: solid;
   border-color: #276678;
-  margin-top: 50px;
-  height:300px;
+  margin: 50px;
   background-color:white;
+  border-radius:5%;
 }
 
 .create-wrapper{
@@ -12,3 +12,7 @@
   background-size: cover;
 }
 
+.add-dose{
+  text-align: center;
+  margin-bottom: 5px;
+}

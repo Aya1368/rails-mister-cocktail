@@ -3,9 +3,9 @@
     <div class="form col-md-6">
       <h1>Add a new dose</h1>
      <%= simple_form_for [@cocktail, @dose] do |f| %>
-        <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
-        <%= f.input :description %>
-        <%= f.button :submit, class: "btn btn-primary" %>
+        <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false, required: true %>
+        <%= f.input :description,required: true %>
+        <div class="add-dose"><%= f.button :submit, class: "btn btn-outline-warning btn-lg" %></div>
       <% end %>
     </div>
   </div>
