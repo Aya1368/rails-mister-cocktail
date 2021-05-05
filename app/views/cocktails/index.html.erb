@@ -1,9 +1,9 @@
 <div class="wrapper">
-  <div class="content cocktails-card col-8">
+  <div class="content cocktails-card col-lg-8">
      <div class="row no-padding">
        <% @cocktails.each do |cocktail| %>
        <div class="card ">
-         <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "text-dark" %></h2>
+         <h3><%= link_to cocktail.name, cocktail_path(cocktail), class: "text-dark" %></h3>
          <% if cocktail.photo.attached? %>
            <div class="photo"><%= cl_image_tag cocktail.photo.key, height: 250, width: 200, crop: :fill %></div>
          <% end %>
@@ -14,9 +14,9 @@
 
  <div class="content">
   <div class="text-card">
-    <h1>Cocktails</h1>
+    <h1 class="shadow text1">Cocktails</h1>
     <p>Awesome beverages for developers nightlife</p>
-    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-outline-warning btn-lg" %>
+    <%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-outline-warning btn-lg" %>
     </div>
   </div>
 </div>

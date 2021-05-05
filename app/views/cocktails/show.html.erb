@@ -5,15 +5,14 @@
   <h1><%= @cocktail.name %></h1>
   <%= cl_image_tag @cocktail.photo.key, height: 250, width: 200, crop: :fill %>
 
-  <div class="table">
-      <h3>Recipe</h3>
-      <table class="table table-bordered">
+  <!-- <div class="table"> -->
+      <h3>Ingredient</h3>
+      <table class="table">
         <tbody>
-          <thead>
+          <!-- <thead>
             <th>Ingredient</th>
             <th>Description</th>
-            <!-- <th>Action</th> -->
-          </thead>
+          </thead> -->
           <% @cocktail.doses.each do |dose| %>
             <tr>
               <td><%= dose.ingredient.name %></td>
@@ -28,14 +27,15 @@
 
         </tbody>
       </table>
-    </div>
+    <!-- </div> -->
 
-<%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+<%= link_to "Add dose", new_cocktail_dose_path(@cocktail), class: "btn btn-outline-warning btn-md" %>
 
 </div>
-<%= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="btn btn btn-dark btn-lg">Delete cocktail</i>
-                <% end %>
+<!-- Delete button -->
+<%#= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
+                  <!-- <i class="btn btn btn-dark btn-lg">Delete cocktail</i> -->
+                <%# end %>
 
 </div>
 </div>
